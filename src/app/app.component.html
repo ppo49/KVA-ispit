@@ -5,7 +5,6 @@
       <a href="/cart">cart</a>
 
   
-      <!-- Provera da li je korisnik ulogovan -->
       <ng-container *ngIf="authService.isLoggedIn(); else loginLink">
         <span class="user-span">Logovan kao, <a href="/user">{{ authService.getLoggedInUser()?.email }}</a></span>
         <a (click)="logout()">Logout</a>
