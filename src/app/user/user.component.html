@@ -1,0 +1,37 @@
+<br><br><br><br>
+<mat-card class="user-card">
+  <h2>Profil</h2>
+  <mat-card-content>
+    <form [formGroup]="userForm" (ngSubmit)="save()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Ime</mat-label>
+        <input matInput formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Prezime</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" [disabled] = "true" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Telefon</mat-label>
+        <input matInput formControlName="phone" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Adresa</mat-label>
+        <input matInput formControlName="address" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Omiljeni Filmovi</mat-label>
+        <textarea matInput formControlName="favoriteMovies"></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Moje Recenzije</mat-label>
+        <textarea matInput formControlName="Reviews"></textarea>
+      </mat-form-field>
+      <input type="submit" value="Sacuvaj promene" class="change-button"/>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <br><br><br><br>
+  <mat-card *ngIf="movie" class="movie-detail-container">
+    <h1 class="movie-title">{{ movie.title }}</h1>
+  
+    <div class="movie-content">
+      <div class="movie-poster">
+        <img [src]="movie.poster" alt="{{ movie.title }}" class="poster-image">
+      </div>
+  
+      <div class="movie-info">
+        <p class="movie-description">{{ movie.description }}</p>
+      </div>  
+        <mat-card class="movie-details-card">
+          <mat-card-content>
+
+            <h2>Cena po karti: {{ ticketPrice }} RSD</h2><br>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Unesite broj karata</mat-label>
+              <input matInput type="number" [(ngModel)]="numberValue" max="5" min="1">
+            </mat-form-field>
+                        
+            <button (click)="submitNumber()" class="cart-button">
+              Dodaj u cart
+            </button>
+            
+
+
+            <mat-list>
+              <mat-list-item><strong>Režiser:</strong> {{ movie.director.name }}</mat-list-item>
+              <mat-list-item><strong>Početak prikazivanja:</strong> {{ movie.startDate | date: 'dd.MM.yyyy' }}</mat-list-item>
+              <mat-list-item><strong>Trajanje:</strong> {{ movie.runTime }} minuta</mat-list-item>
+            </mat-list>
+
+            <mat-divider></mat-divider>
+
+            <h3>Glumci</h3>
+            <mat-list>
+              <mat-list-item *ngFor="let actor of movie.movieActors">{{ actor.actor.name }}</mat-list-item>
+            </mat-list>
+
+            <mat-divider></mat-divider>
+
+            <h3>Žanrovi</h3>
+            <mat-list>
+              <mat-list-item *ngFor="let genre of movie.movieGenres">{{ genre.genre.name }}</mat-list-item>
+             </mat-list>
+          </mat-card-content>
+        </mat-card>      
+    </div>
+  </mat-card>
+
+   <br><br><br>
+  <div *ngIf="!movie" class="loading-message">
+    <h1>podaci se ucitavaju...</h1>
+    <mat-progress-bar *ngIf="!error" mode="indeterminate"></mat-progress-bar>
+    <p *ngIf="error" class="error-message">{{ error }}</p>
+  </div>
+</body>
+</html>

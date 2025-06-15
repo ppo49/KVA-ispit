@@ -1,0 +1,15 @@
+<br><br><br>
+<mat-card class="register-card">
+    <h2>Registracija</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <mat-form-field appearance="outline"><mat-label>Email</mat-label><input matInput formControlName="email"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Password</mat-label><input matInput type="password" formControlName="password"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Ime</mat-label><input matInput formControlName="firstName"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Prezime</mat-label><input matInput formControlName="lastName"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Telefon</mat-label><input matInput formControlName="phone"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Adresa</mat-label><input matInput formControlName="address"></mat-form-field>
+      <mat-form-field appearance="outline"><mat-label>Omiljeni filmovi</mat-label><input matInput formControlName="favoriteMovies"></mat-form-field>
+      <input type="submit" value="Registruj se" class="register-button"/>
+    </form>
+
+  </mat-card>

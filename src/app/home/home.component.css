@@ -1,0 +1,46 @@
+
+html{
+  background-color: #23332a;
+}
+
+body{
+  background-color: #23332a;
+}
+
+  .main_div{
+    min-height: 100vh; /* Osigurava da div zauzima bar visinu ekrana */
+    padding-top: 100px;
+    background-color: #23332a;
+  }
+  .movie-card {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    background: #31463a;
+    color: white;
+  }
+
+  .card-content{
+    font-size: 15px;
+  }
+  
+  .loading_div{
+    padding-top: 250px;
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+
+  }
+
+  .search_div {
+    width: 90%;  /* Širina div-a, možeš postaviti preciznu vrednost ako želiš */
+    margin-left: 5%;
+  }
+  
+  mat-form-field {
+    width: 30%;
+
+  }
+
+  

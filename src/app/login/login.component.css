@@ -1,0 +1,61 @@
+body {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-card {
+    background-color: #2a3b2f; /* Isto kao za cart */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+h2{
+    color: white;
+    margin-left: 2%;
+}
+
+.login-button {
+    margin-left: 10px;
+    color: white;
+    padding: 1em 1.7em;
+    background-color:  #2a3b2f;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    float: right;
+}
+
+.login-button:hover {
+    color: #23332a;
+    background-color: white;
+}
+
+a{
+    font-style: italic;
+    color:blanchedalmond;
+    font-size:small;
+    text-decoration: none;
+}
+

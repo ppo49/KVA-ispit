@@ -1,0 +1,149 @@
+
+
+body{
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cart-details-card{
+    background-color: #23332a;
+    color: white;
+  
+    width: 100%; 
+    padding: 20px;
+    background-color: #2a3b2f;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .remove-p {
+    color: red;
+    cursor: pointer;
+    margin: 0;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .remove-p:hover {
+    color: darkred;
+  }
+
+.cart-button{
+    margin-left: 10px;
+    color: white;
+    padding: 1em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    float: right;
+}
+  
+.cart-button:hover{
+    color: #23332a;
+    background-color: white;
+}
+
+.reserve-button{
+    margin-left: 10px;
+    color: white;
+    padding: 1em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+  
+.reserve-button:hover{
+    color: #23332a;
+    background-color: white;
+}
+
+.empty-cart{
+    font-size: 30px;
+    margin-top: 7%;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.nazad{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cart-table {
+  background-color: #23332a; 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.cart-table th, .cart-table td {
+  padding: 12px 20px; 
+  text-align: left; 
+}
+
+.cart-table th {
+  background-color: #1a2a1d; 
+  color: white; 
+}
+
+.cart-table td {
+  color: white; 
+}
+
+.rating-form {
+  width: 140px; /* Adjust the width to make it narrower */
+  font-size: 3px; /* Optional: Reduce the font size for a more compact appearance */
+}
+
+.rating-form mat-label {
+  font-size: 17px; /* Optional: Adjust the label size */
+}
+
+.rating-form mat-select {
+  width: 100%; /* Ensure the select element fills the form field */
+}
+
+
+

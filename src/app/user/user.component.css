@@ -1,0 +1,49 @@
+body {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Arial', sans-serif;
+}
+
+.user-card{
+    background-color: #2a3b2f;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+h2{
+    color: white;
+    margin-left: 2%;
+}
+
+.change-button {
+    margin-left: 10px;
+    color: white; /* Koristi direktno boju white */
+    padding: 1em 1.7em;
+    background-color: #2a3b2f;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid white;
+    font-family: inherit;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+  
+.change-button:hover{
+    color: #23332a;
+    background-color: white;
+}
+

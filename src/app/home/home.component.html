@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div *ngIf="error" class="main_div">
+        <h2>Desila se greska</h2>
+        <p>{{ error }}</p>
+    </div>
+
+    <div *ngIf="movies" class="main_div">
+
+      <div class="search_div">
+
+        <mat-form-field appearance="outline">
+          <mat-label>Pretraga filmova</mat-label>
+          <input type="text" matInput [formControl]="searchControl" [matAutocomplete]="auto" 
+          matInput placeholder="pretraga po svim parametrima">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let movie of filteredMovies$ | async" [value]="movie.title">
+              {{ movie.title }}  - {{ movie.director.name }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      
+      <div *ngIf="filteredMovies$ | async as filteredMovies" class="main_div">
+        <mat-grid-list cols="4" rowHeight="550px" gutterSize="10px">
+          <mat-grid-tile *ngFor="let movie of filteredMovies">
+    
+            <a [routerLink]="['/movie', movie.movieId]" class="movie-link">
+              <mat-card class="movie-card">
+                <img mat-card-image [src]="movie.poster" alt="{{ movie.title }}">
+                <mat-card-content class="card-content">
+                  <h3>{{ movie.title }}</h3>
+                  <p>Početak prikazivanja: {{ movie.startDate | date: 'dd.MM.yyyy' }}</p>
+                </mat-card-content>
+              </mat-card>
+            </a>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+
+    <div *ngIf="!movies && !error" class="loading_div">  
+      <h1>podaci se ucitavaju...</h1>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+
+  </body>
+</html>

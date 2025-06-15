@@ -1,0 +1,91 @@
+html,body{
+  background-color: #23332a;
+}
+
+body{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.movie-title{
+  color: white;
+}
+
+.movie-detail-container{
+  background-color: #23332a;
+}
+
+.movie-description{
+  font-size: large;
+}
+
+.movie-content{
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+  gap: 10px; /*razmak izmedju slike i desc*/
+}
+
+.poster-image{
+  width: 250px;
+  border: 2px solid #2a3b2f;
+}
+
+.movie-info{
+  background-color: #23332a;
+  flex: 1; /* ovo da opis zaumze preostali prostor nmp ne diraj*/
+  color: white;
+}
+
+.movie-details-card{
+  background-color: #23332a;
+  color: white;
+
+  width: 100%; 
+  margin-top: 20px; /* razmak ispod desc */
+  padding: 20px;
+  background-color: #2a3b2f;
+  color: white;
+  border-radius: 8px;
+}
+
+.loading-message{
+  padding-top: 250px;
+  text-align: center;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+.cart-button{
+  margin-left: 10px;
+  color: white;
+  padding: 1em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.cart-button:hover{
+  color: #23332a;
+  background-color: white;
+}
+
+.snack-bar-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ 

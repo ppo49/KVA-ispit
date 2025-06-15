@@ -1,0 +1,40 @@
+
+header {
+    background-color: #3e5849;
+    color: #edf4f2;
+    padding: 20px;
+    text-align: left;
+    z-index: 10000; /* Osigurava da je header iznad ostalog sadržaja */
+    width: 100%;
+    position: fixed; /* Fiksira header na vrhu */
+    top: 0;
+    left: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 2%;
+}
+
+.user-span {
+  margin-left: auto;
+  /*font-weight: bold;*/
+}
+
+
+
+  
+
+a {
+  color: #edf4f2;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
