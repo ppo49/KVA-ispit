@@ -10,15 +10,15 @@ const client = axios.create({
 });
 
 export class MovieService {
-    // Metoda za dobijanje svih filmova
+    
     async getMovies(page = 0, size = 10) {
         const response = await client.get('/movie', { params: { page, size } });
-        return response.data; // Vraćamo samo podatke
+        return response.data; 
     }
 
-    // Metoda za dobijanje filma po ID-u
+    
     async getMovieById(id: number) {
         const response = await client.get(`/movie/${id}`);
-        return response.data; // Vraćamo samo podatke
+        return response.data; 
     }
 }

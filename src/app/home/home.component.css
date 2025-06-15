@@ -8,7 +8,7 @@ body{
 }
 
   .main_div{
-    min-height: 100vh; /* Osigurava da div zauzima bar visinu ekrana */
+    min-height: 100vh; 
     padding-top: 100px;
     background-color: #23332a;
   }
@@ -34,7 +34,7 @@ body{
   }
 
   .search_div {
-    width: 90%;  /* Širina div-a, možeš postaviti preciznu vrednost ako želiš */
+    width: 90%;  
     margin-left: 5%;
   }
   

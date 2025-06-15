@@ -133,16 +133,16 @@ body{
 }
 
 .rating-form {
-  width: 140px; /* Adjust the width to make it narrower */
-  font-size: 3px; /* Optional: Reduce the font size for a more compact appearance */
+  width: 140px; 
+  font-size: 3px; 
 }
 
 .rating-form mat-label {
-  font-size: 17px; /* Optional: Adjust the label size */
+  font-size: 17px; 
 }
 
 .rating-form mat-select {
-  width: 100%; /* Ensure the select element fills the form field */
+  width: 100%; 
 }
 
 

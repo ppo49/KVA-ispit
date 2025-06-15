@@ -23,7 +23,7 @@ body{
   display: flex;
   flex-wrap: wrap; 
   align-items: flex-start;
-  gap: 10px; /*razmak izmedju slike i desc*/
+  gap: 10px; 
 }
 
 .poster-image{
@@ -33,7 +33,7 @@ body{
 
 .movie-info{
   background-color: #23332a;
-  flex: 1; /* ovo da opis zaumze preostali prostor nmp ne diraj*/
+  flex: 1; 
   color: white;
 }
 
@@ -42,7 +42,7 @@ body{
   color: white;
 
   width: 100%; 
-  margin-top: 20px; /* razmak ispod desc */
+  margin-top: 20px; 
   padding: 20px;
   background-color: #2a3b2f;
   color: white;

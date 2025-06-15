@@ -4,9 +4,9 @@ header {
     color: #edf4f2;
     padding: 20px;
     text-align: left;
-    z-index: 10000; /* Osigurava da je header iznad ostalog sadržaja */
+    z-index: 10000; 
     width: 100%;
-    position: fixed; /* Fiksira header na vrhu */
+    position: fixed; 
     top: 0;
     left: 0;
 }

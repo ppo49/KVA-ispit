@@ -25,7 +25,7 @@ h2{
 
 .change-button {
     margin-left: 10px;
-    color: white; /* Koristi direktno boju white */
+    color: white; 
     padding: 1em 1.7em;
     background-color: #2a3b2f;
     border-radius: .3em;
